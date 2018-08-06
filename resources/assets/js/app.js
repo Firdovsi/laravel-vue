@@ -17,6 +17,8 @@ window.axios = require('axios');
 
 Vue.component('example', require('./components/Example.vue'));
 Vue.component('users', require('./components/User.vue'));
+Vue.component('user-create', require('./components/Create.vue'));
+Vue.component('user-edit', require('./components/Edit.vue'));
 
 const app = new Vue({
     el: '#app'

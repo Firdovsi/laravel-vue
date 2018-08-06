@@ -17,10 +17,9 @@
           <td>{{user.name}}</td>
           <td>{{user.email}}</td>
           <td>
-              <a href="" class="btn btn-primary">Edit</a>
+              <a :href="'/users/'+user.id+'/edit'" class="btn btn-primary">Edit</a>
               <a href="" class="btn btn-danger">Delete</a>
           </td>
-          <td></td>
         </tr>
       </thead>
 
