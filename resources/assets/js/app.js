@@ -15,10 +15,24 @@ window.axios = require('axios');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+/**
+  Vue components import for Users
+**/
+
 Vue.component('example', require('./components/Example.vue'));
-Vue.component('users', require('./components/User.vue'));
-Vue.component('user-create', require('./components/Create.vue'));
-Vue.component('user-edit', require('./components/Edit.vue'));
+Vue.component('users', require('./components/users/User.vue'));
+Vue.component('user-create', require('./components/users/Create.vue'));
+Vue.component('user-edit', require('./components/users/Edit.vue'));
+
+/**
+  Vue components import for Articles
+**/
+Vue.component('articles', require('./components/articles/Article.vue'));
+Vue.component('article-create', require('./components/articles/Create.vue'));
+Vue.component('article-edit', require('./components/articles/Edit.vue'));
+
+
+
 
 const app = new Vue({
     el: '#app'
